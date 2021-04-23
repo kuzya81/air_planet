@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+.header {
+    display: flex;
+    background-color: #5973b1;
+    color: white;
+    height: 80px;
+    align-items: center;
+}
+.container{
+    width: 1160px;
+    margin: auto;
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts{
+    font-size: 21px;
+}
+.header__right{
+    text-align: right;
+}
+.dropdown-link{
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown__text{
+    position: absolute;
+    top: 100%;
+    left:-5000px;
+    color: #000;
+    width: 167px;
+    height: 81px;
+    padding: 30px 10px;
+    background: url(../img/dd_bg.png) center no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+    opacity: 0;
+}
+.dropdown-link:hover .dropdown__text{
+    opacity: 1;
+    right: 0;
+    left: auto;
+}
+.work-days{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    color: #5973b1;
+}
+.lounch{
+    font-size: 14px;
+    text-align: center;
+}
+.main{
+    padding-top: 27px;
+}
+.main__content{
+    display: flex;
+    justify-content: space-between;
+}
+.main__left-block{
+    width: 270px;
+
+}
+.left-block__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e8e8ec;
+    padding: 25px 40px;
+}
+.left-block__title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.left-block__partners-logo{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.partner-logo{
+    margin-bottom: 35px;
+    filter: grayscale(1);
+    transition: all .3s;
+}
+.partner-logo:last-child{
+    margin-bottom: 0px;
+}
+.partner-logo:hover{
+    filter: grayscale(0);
+}
+.socials{
+    margin-top: 30px;
+    text-align: center;
+}
+.socials a{
+    margin-left: 15px;
+    filter: saturate(.2);
+}
+.socials a:hover{
+    filter: saturate(1);
+}
+.menu{
+    display: flex;
+    margin-right: auto;
+}
+.menu a{
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 54px;
+    color:  #5973b1;
+    position: relative;
+    filter: grayscale(0%);
+    transition: all .3s;
+}
+.menu a:hover{
+    filter: grayscale(100%);
+}
+.main-icon::before{
+    content: url(../img/icons/main_icon.png);
+    position: absolute;
+    left: -25px;
+    top: 3px;
+}
+.feed-icon::before{
+    content: url(../img/icons/feed_icon.png);
+    position: absolute;
+    left: -25px;
+    top: 3px;
+}
+.team-icon::before{
+    content: url(../img/icons/team_icon.png);
+    position: absolute;
+    left: -25px;
+    top: 3px;
+}
+.right-block{
+    margin-right: auto;
+    max-width: 865px;
+    margin-left: 30px;
+}
+
+.team__title{
+    font-size: 49px;
+    font-weight: 700;
+}
+.team__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 270px;
+    margin-bottom: 50px;
+}
+
+.member__avatar{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #5973b1;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.member__name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    font-weight: 700;
+}
+.member__name:hover{
+    color: #000;
+}
+.member__full-name{
+    font-weight: 700;
+    text-align: center;
+}
+.member__job{
+    font-size: 14px;
+    color: #5973b1;
+    margin-bottom: 15px;
+}
+.member__text{
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+.footer{
+    background-color: #5973b1;
+    color: #fff;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}

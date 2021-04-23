@@ -1,0 +1,65 @@
+.wrapper{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url(/img/bg_main.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.main__content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    animation: Main_animation;
+    animation-delay: .5s;
+    animation-duration: 1s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    transform: scale(0);
+}
+.btn{
+    margin-top: 45px;
+    color: #1c5bc4;
+    padding: 10px 40px;
+    border: 1px solid #1c5bc4;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+.btn::after{
+    position: absolute;
+    content: url(../img/main_icon.png);
+    width: 15px;
+    height: 15px;
+    right: 20px;
+    top: 8px;
+}
+ @keyframes Main_animation{
+    from{
+        transform: scale(0);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+    40%{
+        transform: scale(.9);
+    }
+    60%{
+        transform: scale(1.1);
+    }
+    80%{
+        transform: scale(.9);
+    }
+    to{
+        transform: scale(1);
+    }
+ }
